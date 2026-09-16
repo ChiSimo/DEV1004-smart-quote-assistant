@@ -1,5 +1,6 @@
-# Application-generated data
-quote_requests.txt
+# Git files
+.git
+.gitignore
 
 # Python cache files
 __pycache__/
@@ -9,11 +10,17 @@ __pycache__/
 .venv/
 venv/
 
+# Local application data
+quote_requests.txt
+
 # Environment and secret files
 .env
 .env.*
 
-# IDE and operating system files
+# Development files
 .vscode/
 .idea/
 .DS_Store
+
+# Documentation
+README.md
