@@ -278,3 +278,80 @@ The program collects customer information such as names, email addresses, phone 
 For this prototype, requests are stored only in a local text file. The file is excluded from GitHub through `.gitignore` so that customer and test information is not uploaded to the public repository.
 
 A production version would require stronger security, access controls, consent information and a clear data-retention policy.
+
+## Containerisation
+
+Docker is used in this project to run the Smart Quote Request Assistant inside a container.
+
+The Dockerfile uses Python 3.12 and copies `main.py` into the container so the program can run without depending on the Python setup of the computer being used.
+
+The project uses `APP_VERSION` to identify the application version and `APP_ENV` to identify the environment being used.
+
+I created and tested three versions of the Docker image:
+
+- Development
+- Testing
+- Production
+
+The same Dockerfile is used for all three. The environment can be changed when the image is built instead of creating a different Dockerfile for each version.
+
+The `.dockerignore` file is also used to stop files that are not needed by the application from being included in the Docker build.
+
+
+## Application Architecture
+
+I created three architecture diagrams to show the main parts of the project and how they work together. The diagrams are saved in the `docs` folder.
+
+### 1. Runtime Architecture
+
+The first diagram shows what happens when the application is running.
+
+The user starts the program from the terminal and enters the information needed for the quote request.
+
+The application runs inside a Docker container with Python 3.12. Inside the container, `main.py` checks the information entered by the user and processes the quote request.
+
+The program then classifies the job complexity, checks if a site inspection may be needed and calculates an approximate price range.
+
+The final quote summary is shown in the terminal and the quote request is saved in `quote_requests.txt`.
+
+When the container is run with `--rm`, the container is removed after it stops. This means the text file created inside that container is not permanent unless a volume is used.
+
+### 2. Container Build Architecture
+
+The second diagram shows how the Docker image is built.
+
+The Dockerfile contains the instructions Docker needs to build the image. It uses Python 3.12, creates the working directory and copies `main.py` into the container.
+
+The `.dockerignore` file tells Docker which project files do not need to be included in the build.
+
+The project also uses `APP_VERSION` for the application version and `APP_ENV` for the environment.
+
+Using these settings, I created and tested three Docker images for:
+
+- Development: `smart-quote-assistant:1.0.0-dev`
+- Testing: `smart-quote-assistant:1.0.0-test`
+- Production: `smart-quote-assistant:1.0.0-prod`
+
+The same Dockerfile is used for each environment.
+
+### 3. CI/CD Architecture
+
+The third diagram shows what happens after the project is pushed to GitHub.
+
+The project is developed in Visual Studio Code and Git is used to keep track of changes. When changes are pushed to the `main` branch on GitHub, the Docker CD workflow starts automatically.
+
+The workflow is stored in `.github/workflows/docker-cd.yml`. GitHub Actions checks out the project and builds the production Docker image.
+
+The workflow uses `GITHUB_TOKEN`, which is provided by GitHub Actions, to connect securely to GitHub Container Registry. The token is not written directly in the project files.
+
+The production image is published to GitHub Container Registry as:
+
+`ghcr.io/chisimo/dev1004-smart-quote-assistant`
+
+The image is given different tags:
+
+- `1.0.0-production` shows the version and environment.
+- The Git commit SHA connects the image to the version of the project that created it.
+- `latest` identifies the latest image.
+
+I also tested this process by pulling the production image from GitHub Container Registry and running it with Docker. The application ran successfully.

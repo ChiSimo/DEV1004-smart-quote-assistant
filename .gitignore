@@ -1,19 +1,9 @@
 # Application-generated data
 quote_requests.txt
 
-# Python cache files
+# Python cache
 __pycache__/
 *.py[cod]
 
-# Virtual environments
-.venv/
-venv/
-
-# Environment and secret files
-.env
-.env.*
-
-# IDE and operating system files
-.vscode/
-.idea/
+# macOS system files
 .DS_Store

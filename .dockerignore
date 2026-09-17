@@ -1,26 +1,14 @@
-# Git files
+# Version control
 .git
-.gitignore
-
-# Python cache files
-__pycache__/
-*.py[cod]
-
-# Virtual environments
-.venv/
-venv/
+.github
 
 # Local application data
 quote_requests.txt
 
-# Environment and secret files
-.env
-.env.*
-
-# Development files
-.vscode/
-.idea/
-.DS_Store
+# Python cache
+__pycache__/
+*.py[cod]
 
 # Documentation
+docs/
 README.md

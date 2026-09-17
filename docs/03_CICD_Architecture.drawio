@@ -1,0 +1,144 @@
+<mxfile host="65bd71144e">
+    <diagram name="Page-1" id="7X5jFKKg9q_Lv3G8ZEf8">
+        <mxGraphModel dx="498" dy="229" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="Kj0fQ1J3nu2KJSGFCG-U-1" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;&lt;b&gt;CI/CD Architecture&lt;/b&gt;&lt;/font&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="285" y="70" width="280" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="Kj0fQ1J3nu2KJSGFCG-U-2" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;Automated production image build and deployment to GitHub Container Registry&lt;/font&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="98" y="110" width="655" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="Kj0fQ1J3nu2KJSGFCG-U-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="Kj0fQ1J3nu2KJSGFCG-U-3" target="Kj0fQ1J3nu2KJSGFCG-U-15" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="Kj0fQ1J3nu2KJSGFCG-U-3" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;gradientColor=#7ea6e0;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="160" width="160" height="280" as="geometry"/>
+                </mxCell>
+                <mxCell id="Kj0fQ1J3nu2KJSGFCG-U-4" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;1. Developer /&amp;nbsp;&lt;/b&gt;&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;Local Project&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="65" y="167" width="110" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="Kj0fQ1J3nu2KJSGFCG-U-10" value="" style="endArrow=none;html=1;rounded=0;" parent="1" target="Kj0fQ1J3nu2KJSGFCG-U-3" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="200" y="240"/>
+                        </Array>
+                        <mxPoint x="40" y="240" as="sourcePoint"/>
+                        <mxPoint x="90" y="190" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="Kj0fQ1J3nu2KJSGFCG-U-11" value="&lt;b&gt;Vs Code&lt;/b&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="80" y="240" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="Kj0fQ1J3nu2KJSGFCG-U-13" value="main.py&lt;div&gt;Dockerfile&lt;/div&gt;&lt;div&gt;.dockerignore&lt;/div&gt;&lt;div&gt;docker-cd.yml&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="47.5" y="255" width="125" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="Kj0fQ1J3nu2KJSGFCG-U-14" value="Git commit and push to main branch&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="380" width="152.5" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="Kj0fQ1J3nu2KJSGFCG-U-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="Kj0fQ1J3nu2KJSGFCG-U-15" target="Kj0fQ1J3nu2KJSGFCG-U-21" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="Kj0fQ1J3nu2KJSGFCG-U-15" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;gradientColor=#97d077;strokeColor=#82b366;" parent="1" vertex="1">
+                    <mxGeometry x="240" y="160" width="160" height="280" as="geometry"/>
+                </mxCell>
+                <mxCell id="Kj0fQ1J3nu2KJSGFCG-U-16" value="" style="endArrow=none;html=1;rounded=0;" parent="1" target="Kj0fQ1J3nu2KJSGFCG-U-15" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="400" y="240"/>
+                        </Array>
+                        <mxPoint x="240" y="240" as="sourcePoint"/>
+                        <mxPoint x="290" y="190" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="Kj0fQ1J3nu2KJSGFCG-U-17" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;2. GitHub&lt;/b&gt;&lt;/font&gt;&lt;div&gt;&lt;font size=&quot;3&quot;&gt;&lt;b&gt;Repository&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="270" y="181" width="100" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="Kj0fQ1J3nu2KJSGFCG-U-18" value="&lt;b&gt;DEV1004-smart-quote-assistant&lt;/b&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="250" y="241" width="140" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="Kj0fQ1J3nu2KJSGFCG-U-19" value="Source code stored in GitHub" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="250" y="290" width="90" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="Kj0fQ1J3nu2KJSGFCG-U-20" value="Push to main triggers Docker CD workflow" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="257.5" y="380" width="125" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="Kj0fQ1J3nu2KJSGFCG-U-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="Kj0fQ1J3nu2KJSGFCG-U-21" target="Kj0fQ1J3nu2KJSGFCG-U-26" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="640" y="610" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="Kj0fQ1J3nu2KJSGFCG-U-21" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffcd28;gradientColor=#ffa500;strokeColor=#d79b00;" parent="1" vertex="1">
+                    <mxGeometry x="440" y="160" width="160" height="280" as="geometry"/>
+                </mxCell>
+                <mxCell id="Kj0fQ1J3nu2KJSGFCG-U-22" value="" style="endArrow=none;html=1;rounded=0;" parent="1" target="Kj0fQ1J3nu2KJSGFCG-U-21" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="600" y="240"/>
+                        </Array>
+                        <mxPoint x="440" y="240" as="sourcePoint"/>
+                        <mxPoint x="490" y="190" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="Kj0fQ1J3nu2KJSGFCG-U-23" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;3. GitHub Actions&lt;/b&gt;&lt;/font&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="458" y="184" width="125" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="Kj0fQ1J3nu2KJSGFCG-U-24" value="&lt;b&gt;Docker CD Workflow&lt;/b&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="450.5" y="241" width="140" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="Kj0fQ1J3nu2KJSGFCG-U-25" value="Checkout repository&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Build production image&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;APP_VERSION=1.0.0&lt;/div&gt;&lt;div&gt;APP_ENV=production&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="450.5" y="290" width="140" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="Kj0fQ1J3nu2KJSGFCG-U-40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="Kj0fQ1J3nu2KJSGFCG-U-26" target="Kj0fQ1J3nu2KJSGFCG-U-28" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="Kj0fQ1J3nu2KJSGFCG-U-26" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e6d0de;gradientColor=#d5739d;strokeColor=#996185;" parent="1" vertex="1">
+                    <mxGeometry x="440.5" y="480" width="160" height="280" as="geometry"/>
+                </mxCell>
+                <mxCell id="Kj0fQ1J3nu2KJSGFCG-U-27" value="" style="endArrow=none;html=1;rounded=0;" parent="1" target="Kj0fQ1J3nu2KJSGFCG-U-26" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="600.5" y="560"/>
+                        </Array>
+                        <mxPoint x="440.5" y="560" as="sourcePoint"/>
+                        <mxPoint x="490.5" y="510" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="Kj0fQ1J3nu2KJSGFCG-U-28" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;gradientColor=#ea6b66;strokeColor=#b85450;" parent="1" vertex="1">
+                    <mxGeometry x="240" y="480" width="160" height="280" as="geometry"/>
+                </mxCell>
+                <mxCell id="Kj0fQ1J3nu2KJSGFCG-U-29" value="" style="endArrow=none;html=1;rounded=0;" parent="1" target="Kj0fQ1J3nu2KJSGFCG-U-28" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="400" y="560"/>
+                        </Array>
+                        <mxPoint x="240" y="560" as="sourcePoint"/>
+                        <mxPoint x="290" y="510" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="Kj0fQ1J3nu2KJSGFCG-U-30" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;4. Secure Registry&lt;/b&gt;&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;Authentication&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="457.5" y="510" width="125" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="Kj0fQ1J3nu2KJSGFCG-U-31" value="&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;5. GitHub Container Registry&lt;/b&gt;&lt;/span&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="257.5" y="510" width="125" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="Kj0fQ1J3nu2KJSGFCG-U-32" value="&lt;b&gt;GITHUB_TOKEN&lt;/b&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="450" y="560" width="140" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="Kj0fQ1J3nu2KJSGFCG-U-33" value="Provided securely by GitHub Actions&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;permissions:&lt;/div&gt;&lt;div&gt;&amp;nbsp;contents: read&lt;/div&gt;&lt;div&gt;&amp;nbsp;packages: write&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="447" y="584" width="140" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="Kj0fQ1J3nu2KJSGFCG-U-34" value="Authenticates workflow with GHCR" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="454.5" y="720" width="125" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="Kj0fQ1J3nu2KJSGFCG-U-35" value="ghcr.io/chisimo/dev1004-smart-quote-assistant&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Image tags:&lt;/div&gt;&lt;div&gt;1.0.0-production&lt;/div&gt;&lt;div&gt;Git commit SHA&lt;/div&gt;&lt;div&gt;latest&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="242.5" y="560" width="140" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="Kj0fQ1J3nu2KJSGFCG-U-36" value="Production image can be pulled and run with Docker&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="243.5" y="713" width="152.5" height="40" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
